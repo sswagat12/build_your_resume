@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: resume_builder
+    name: core
     buildCommand: "./build.sh"
     env: python
-    startCommand: "gunicorn resume_builder.wsgi:application"
+    startCommand: "gunicorn core.wsgi:application"
